@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600" prefWidth="600" xmlns:fx="http://javafx.com/fxml" fx:controller="ru.popovichia.cloudstorage.client.FXMLController">
+    <children>
+        <TextField layoutX="5" layoutY="5" maxHeight="16" prefWidth="100" promptText="Server IP"  fx:id="tfServerIP"/>
+        <TextField layoutX="105" layoutY="5" maxHeight="16" prefWidth="100" promptText="Server Port" fx:id="tfServerPort"/>
+        <TextField layoutX="205" layoutY="5" maxHeight="16" prefWidth="100" promptText="Login" fx:id="tfLogin"/>
+        <PasswordField layoutX="305" layoutY="5" maxHeight="16" prefWidth="100" promptText="Password" fx:id="pfPassword"/>
+        <Button layoutX="405" layoutY="5" fx:id="bLogin" onMouseClicked="#handleBLoginMouseClick">Login</Button>
+        <Label layoutX="490"  layoutY="10" prefHeight="16" prefWidth="100" fx:id="lClientStatus">Not connected.</Label>
+        <ListView layoutX="0" layoutY="40" minHeight="300" minWidth="300" fx:id="lvClient" onMouseClicked="#handleLvClientMouseClick"/>
+        <ListView layoutX="300" layoutY="40" minHeight="300" minWidth="300" fx:id="lvServer" onMouseClicked="#handleLvServerMouseClick"/>
+        <Button layoutX="5" layoutY="450" disable="true" fx:id="bMoveFile">Upload/Download</Button>
+    </children>
+</AnchorPane>

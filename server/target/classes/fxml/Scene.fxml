@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600" prefWidth="600" xmlns:fx="http://javafx.com/fxml" fx:controller="ru.popovichia.cloudstorage.server.FXMLController">
+    <children>
+        <Label layoutX="5" layoutY="10" prefHeight="16" prefWidth="120">Server Address: </Label>
+        <Label layoutX="120" layoutY="10" prefHeight="16" prefWidth="150" fx:id="lServerIP"/>
+        <TextField layoutX="270" layoutY="5" prefHeight="16" prefWidth="90" promptText="Server Port" fx:id="tfServerPort"/>
+        <Button layoutX="370" layoutY="5" fx:id="bStart" onMouseClicked="#handleStartServerMouseClick">Start</Button>
+        <TextArea layoutX="0" layoutY="40" prefHeight="300" prefWidth="600" editable="false" fx:id="taLog"/>
+        <Label layoutX="0" layoutY="350" prefHeight="16" prefWidth="120">Directories: </Label>        
+        <Label layoutX="300" layoutY="350" prefHeight="16" prefWidth="120">Connected users: </Label>
+        <ListView layoutX="0" layoutY="370" prefHeight="270" prefWidth="300" fx:id="lvDirs"/>        
+        <ListView layoutX="300" layoutY="370" prefHeight="270" prefWidth="300" fx:id="lvConnectedUsers"/>
+    </children>
+</AnchorPane>
