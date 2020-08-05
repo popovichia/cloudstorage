@@ -10,10 +10,6 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import ru.popovichia.cloudstorage.server.FXMLController;
 
-/**
- *
- * @author igor
- */
 public class ConnectionsHandler implements Runnable {
     
     private FXMLController fxmlController = null;
@@ -28,8 +24,8 @@ public class ConnectionsHandler implements Runnable {
     @Override
     public void run() {
         try {
-            Thread.sleep(500);
-        } catch (InterruptedException ex) {
+            Thread.sleep(5);
+        } catch (InterruptedException interruptedException) {
         }
         while (!isStopped) {
             fxmlController.addMessageToLog("Сервер ожидает соединение...\n");

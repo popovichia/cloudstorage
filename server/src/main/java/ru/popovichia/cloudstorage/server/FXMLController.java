@@ -59,14 +59,19 @@ public class FXMLController implements Initializable {
                     tfServerPort.setEditable(false);
 //                    clientsHealthyTask = new ClientsHealthyTask(this);
 //                    new Thread(clientsHealthyTask).start();
-                    taLog.appendText("Сервер запущен. IP: "
+                    addMessageToLog("Сервер запущен. IP: "
                             + lServerIP.getText()
                             + tfServerPort.getText() + ".\n");
                     connectionsHandler = new ConnectionsHandler(this, serverSocket);
-                    new Thread(connectionsHandler).start();
+                    Thread threadConnectionsHandler = new Thread(connectionsHandler);
+                    threadConnectionsHandler.start();
                 } catch (IOException ioException) {
 
                 }
+            } else {
+                addMessageToLog("ERROR: Указанные порт "
+                        + tfServerPort.getText() + " за границами допустимого диапазона "
+                        + " от 0 до 65535.\n");
             }
         } else if (bStart.getText().equals("Stop")) {
             if (serverSocket != null) {
@@ -78,7 +83,7 @@ public class FXMLController implements Initializable {
                     lvConnectedUsers.setItems(FXCollections.observableArrayList(this.clientsArrayList));                            
                     bStart.setText("Start");
                     tfServerPort.setEditable(true);
-                    taLog.appendText("Сервер остановлен. IP: "
+                    addMessageToLog("Сервер остановлен. IP: "
                             + lServerIP.getText()
                             + tfServerPort.getText() + ".\n");
                 } catch (IOException ioException) {
@@ -98,7 +103,7 @@ public class FXMLController implements Initializable {
                 serverDir.mkdir();
             }
             clientsArrayList = new ArrayList<Client>();
-            taLog.appendText("Приложение запущенно.\n"
+            addMessageToLog("Приложение запущенно.\n"
                     + "    Рабочая директория: "
                     + serverDir.getAbsolutePath() + "\n");
             ObservableList<String> itemsObservableList = FXCollections.observableArrayList(serverDir.list());

@@ -8,8 +8,12 @@
 
 <AnchorPane id="AnchorPane" prefHeight="600" prefWidth="600" xmlns:fx="http://javafx.com/fxml" fx:controller="ru.popovichia.cloudstorage.client.FXMLController">
     <children>
-        <TextField layoutX="5" layoutY="5" maxHeight="16" prefWidth="100" promptText="Server IP"  fx:id="tfServerIP"/>
-        <TextField layoutX="105" layoutY="5" maxHeight="16" prefWidth="100" promptText="Server Port" fx:id="tfServerPort"/>
+        <TextField layoutX="5" layoutY="5" maxHeight="16" prefWidth="100" promptText="Server IP"  fx:id="tfServerIP">
+            192.168.1.64
+        </TextField>
+        <TextField layoutX="105" layoutY="5" maxHeight="16" prefWidth="100" promptText="Server Port" fx:id="tfServerPort">
+            111
+        </TextField>
         <TextField layoutX="205" layoutY="5" maxHeight="16" prefWidth="100" promptText="Login" fx:id="tfLogin"/>
         <PasswordField layoutX="305" layoutY="5" maxHeight="16" prefWidth="100" promptText="Password" fx:id="pfPassword"/>
         <Button layoutX="405" layoutY="5" fx:id="bLogin" onMouseClicked="#handleBLoginMouseClick">Login</Button>

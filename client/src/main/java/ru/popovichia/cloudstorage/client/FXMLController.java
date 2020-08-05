@@ -42,7 +42,7 @@ public class FXMLController implements Initializable {
     }
     
     @FXML
-    private void handleBLoginMouseClick(MouseEvent mouseEvent) {
+    private void handleBLoginMouseClick(MouseEvent mouseEvent) throws IOException {
         if ((socket == null || socket.isClosed())
                 && bLogin.getText().equals("Login")) {
             try {
@@ -60,7 +60,7 @@ public class FXMLController implements Initializable {
                 new Thread(inputChannelClient).start();
                 outputChannelClient = new OutputChannelClient(socket);
             }
-        } else if (socket != null && socket.isConnected() && bLogin.getText().equals("Logout")) {            
+        } else if (socket != null && bLogin.getText().equals("Logout")) {            
             outputChannelClient.send("stop");
             lClientStatus.setText("Disconnected.");
             tfServerIP.setEditable(true);
@@ -68,6 +68,8 @@ public class FXMLController implements Initializable {
             tfLogin.setEditable(true);
             pfPassword.setEditable(true);
             bLogin.setText("Login");           
+            socket.close();
+            socket = null;
         }
     }
 

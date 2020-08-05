@@ -1,7 +1,7 @@
-/Files/git/geekbrains.ru/cloudstorage/server/src/main/java/ru/popovichia/cloudstorage/server/services/OutputChannelServer.java
-/Files/git/geekbrains.ru/cloudstorage/server/src/main/java/ru/popovichia/cloudstorage/server/services/InputChannelServer.java
-/Files/git/geekbrains.ru/cloudstorage/server/src/main/java/ru/popovichia/cloudstorage/server/services/ConnectionsHandler.java
-/Files/git/geekbrains.ru/cloudstorage/server/src/main/java/ru/popovichia/cloudstorage/server/services/ClientsHealthyTask.java
-/Files/git/geekbrains.ru/cloudstorage/server/src/main/java/ru/popovichia/cloudstorage/server/services/Client.java
-/Files/git/geekbrains.ru/cloudstorage/server/src/main/java/ru/popovichia/cloudstorage/server/MainApp.java
-/Files/git/geekbrains.ru/cloudstorage/server/src/main/java/ru/popovichia/cloudstorage/server/FXMLController.java
+C:\Files\git\cloudstorage\server\src\main\java\ru\popovichia\cloudstorage\server\services\ClientsHealthyTask.java
+C:\Files\git\cloudstorage\server\src\main\java\ru\popovichia\cloudstorage\server\services\InputChannelServer.java
+C:\Files\git\cloudstorage\server\src\main\java\ru\popovichia\cloudstorage\server\FXMLController.java
+C:\Files\git\cloudstorage\server\src\main\java\ru\popovichia\cloudstorage\server\MainApp.java
+C:\Files\git\cloudstorage\server\src\main\java\ru\popovichia\cloudstorage\server\services\OutputChannelServer.java
+C:\Files\git\cloudstorage\server\src\main\java\ru\popovichia\cloudstorage\server\services\ConnectionsHandler.java
+C:\Files\git\cloudstorage\server\src\main\java\ru\popovichia\cloudstorage\server\services\Client.java

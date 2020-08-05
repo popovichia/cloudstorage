@@ -1,5 +1,5 @@
-ru/popovichia/cloudstorage/client/FXMLController.class
-ru/popovichia/cloudstorage/client/services/OutputChannelClient.class
-ru/popovichia/cloudstorage/client/services/OutputChannelClient$1.class
-ru/popovichia/cloudstorage/client/services/InputChannelClient.class
-ru/popovichia/cloudstorage/client/MainApp.class
+ru\popovichia\cloudstorage\client\services\OutputChannelClient.class
+ru\popovichia\cloudstorage\client\services\InputChannelClient.class
+ru\popovichia\cloudstorage\client\FXMLController.class
+ru\popovichia\cloudstorage\client\services\OutputChannelClient$1.class
+ru\popovichia\cloudstorage\client\MainApp.class

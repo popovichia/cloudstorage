@@ -23,16 +23,18 @@ public class OutputChannelClient {
             @Override
             public void run() {
                 try {
-                    outputStream = OutputChannelClient.this.socket.getOutputStream();
-                    System.out.println("socket.getLocalAddress(): " + OutputChannelClient.this.socket.getLocalAddress());
-                    System.out.println("socket.getPort(): " + OutputChannelClient.this.socket.getPort());
-                    System.out.println("socket.getLocalPort(): " + OutputChannelClient.this.socket.getLocalPort());
-                    outputStream.write(stringMessage.getBytes());
-                    outputStream.flush();                   
-                } catch (IOException ioException) {
-
-                } finally {
-                    
+                    OutputChannelClient.this.outputStream = OutputChannelClient.this.socket.getOutputStream();
+                } catch (IOException ex) {
+                    System.out.println("ERROR: outputStream - " + OutputChannelClient.this.outputStream);
+                }
+                System.out.println("socket.getLocalAddress(): " + OutputChannelClient.this.socket.getLocalAddress());
+                System.out.println("socket.getPort(): " + OutputChannelClient.this.socket.getPort());
+                System.out.println("socket.getLocalPort(): " + OutputChannelClient.this.socket.getLocalPort());
+                try {
+                    OutputChannelClient.this.outputStream.write(stringMessage.getBytes());
+                    OutputChannelClient.this.outputStream.flush();
+                } catch (IOException ex) {
+                    System.out.println("ERROR: outputStream - " + OutputChannelClient.this.outputStream);
                 }
             }
         }).start();

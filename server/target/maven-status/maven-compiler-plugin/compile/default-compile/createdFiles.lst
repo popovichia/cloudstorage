@@ -1,7 +1,7 @@
-ru/popovichia/cloudstorage/server/services/Client.class
-ru/popovichia/cloudstorage/server/services/OutputChannelServer.class
-ru/popovichia/cloudstorage/server/FXMLController.class
-ru/popovichia/cloudstorage/server/services/ConnectionsHandler.class
-ru/popovichia/cloudstorage/server/MainApp.class
-ru/popovichia/cloudstorage/server/services/InputChannelServer.class
-ru/popovichia/cloudstorage/server/services/ClientsHealthyTask.class
+ru\popovichia\cloudstorage\server\MainApp.class
+ru\popovichia\cloudstorage\server\services\ClientsHealthyTask.class
+ru\popovichia\cloudstorage\server\services\ConnectionsHandler.class
+ru\popovichia\cloudstorage\server\services\OutputChannelServer.class
+ru\popovichia\cloudstorage\server\services\InputChannelServer.class
+ru\popovichia\cloudstorage\server\FXMLController.class
+ru\popovichia\cloudstorage\server\services\Client.class
